@@ -7,10 +7,10 @@ namespace Managers
     {
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.A)) Debug.Log("A Pressed");
+            if (Input.GetKeyDown(KeyCode.A)) DebugManager.Instance.PrintDebugText("A pressed");
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log(Input.mousePosition.ToString());
+                DebugManager.Instance.PrintDebugText(Input.mousePosition.ToString());
             }
         }
     }
