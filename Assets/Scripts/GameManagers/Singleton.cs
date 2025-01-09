@@ -7,7 +7,7 @@
  */
 namespace Managers
 {
-    public class Singleton<T> : MonoBehaviour where T : MonoBehaviour {
+    public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour {
         private static bool _shutdown = false;
         private static object _lock = new object();
         private static T _instance;
